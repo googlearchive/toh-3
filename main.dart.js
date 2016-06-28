@@ -368,7 +368,7 @@ z=a.length
 for(y=0;y<z;++y){x=a[y]
 if(b.$1(x)===!0)return x
 if(a.length!==z)throw H.c(new P.a_(a))}return c.$0()},
-L:function(a,b){if(b>>>0!==b||b>=a.length)return H.h(a,b)
+L:function(a,b){if(b<0||b>=a.length)return H.h(a,b)
 return a[b]},
 gJ:function(a){if(a.length>0)return a[0]
 throw H.c(H.ad())},
@@ -3459,16 +3459,16 @@ if(z!=null){z.gey()
 z=!0}else z=!1
 if(z)throw H.c(new L.J("There can be only one platform. Destroy the previous one to create a new one."))
 $.dw=!0
-try{$.cJ=a.E($.$get$aM().B(C.bo),null,null,C.a)}finally{$.dw=!1}return $.cJ},
+try{$.cJ=a.D($.$get$aM().B(C.bo),null,null,C.a)}finally{$.dw=!1}return $.cJ},
 mK:function(){var z=$.cJ
 if(z!=null){z.gey()
 z=!0}else z=!1
 return z?$.cJ:null},
-xb:function(a,b){var z=a.E($.$get$aM().B(C.aL),null,null,C.a)
+xb:function(a,b){var z=a.D($.$get$aM().B(C.aL),null,null,C.a)
 return z.Y(new K.xd(a,b,z))},
 xd:{"^":"a:0;a,b,c",
 $0:[function(){var z=this.c
-return Q.eG([this.a.E($.$get$aM().B(C.Y),null,null,C.a).m7(this.b),z.mj()]).dn(new K.xc(z))},null,null,0,0,null,"call"]},
+return Q.eG([this.a.D($.$get$aM().B(C.Y),null,null,C.a).m7(this.b),z.mj()]).dn(new K.xc(z))},null,null,0,0,null,"call"]},
 xc:{"^":"a:1;a",
 $1:[function(a){return this.a.kL(J.x(a,0))},null,null,2,0,null,70,"call"]},
 iE:{"^":"b;",
@@ -4213,7 +4213,7 @@ if(w>=y.length)return H.h(y,w)
 return y[w]}}return C.a},
 dt:function(){return this.c.length}},
 eH:{"^":"b;a,b,c,d,e",
-T:function(a,b){return this.E($.$get$aM().B(a),null,null,b)},
+T:function(a,b){return this.D($.$get$aM().B(a),null,null,b)},
 B:function(a){return this.T(a,C.a)},
 av:function(a){if(this.c++>this.b.dt())throw H.c(M.hh(this,J.C(a)))
 return this.fS(a)},
@@ -4256,121 +4256,121 @@ try{if(J.B(x,0)){a1=J.x(y,0)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a5=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a5=null
+a5=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a5=null
 w=a5
 if(J.B(x,1)){a1=J.x(y,1)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a6=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a6=null
+a6=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a6=null
 v=a6
 if(J.B(x,2)){a1=J.x(y,2)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a7=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a7=null
+a7=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a7=null
 u=a7
 if(J.B(x,3)){a1=J.x(y,3)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a8=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a8=null
+a8=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a8=null
 t=a8
 if(J.B(x,4)){a1=J.x(y,4)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a9=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a9=null
+a9=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a9=null
 s=a9
 if(J.B(x,5)){a1=J.x(y,5)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b0=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b0=null
+b0=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b0=null
 r=b0
 if(J.B(x,6)){a1=J.x(y,6)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b1=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b1=null
+b1=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b1=null
 q=b1
 if(J.B(x,7)){a1=J.x(y,7)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b2=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b2=null
+b2=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b2=null
 p=b2
 if(J.B(x,8)){a1=J.x(y,8)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b3=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b3=null
+b3=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b3=null
 o=b3
 if(J.B(x,9)){a1=J.x(y,9)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b4=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b4=null
+b4=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b4=null
 n=b4
 if(J.B(x,10)){a1=J.x(y,10)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b5=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b5=null
+b5=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b5=null
 m=b5
 if(J.B(x,11)){a1=J.x(y,11)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-a6=this.E(a2,a3,a4,a1.gO()?null:C.a)}else a6=null
+a6=this.D(a2,a3,a4,a1.gO()?null:C.a)}else a6=null
 l=a6
 if(J.B(x,12)){a1=J.x(y,12)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b6=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b6=null
+b6=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b6=null
 k=b6
 if(J.B(x,13)){a1=J.x(y,13)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b7=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b7=null
+b7=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b7=null
 j=b7
 if(J.B(x,14)){a1=J.x(y,14)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b8=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b8=null
+b8=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b8=null
 i=b8
 if(J.B(x,15)){a1=J.x(y,15)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-b9=this.E(a2,a3,a4,a1.gO()?null:C.a)}else b9=null
+b9=this.D(a2,a3,a4,a1.gO()?null:C.a)}else b9=null
 h=b9
 if(J.B(x,16)){a1=J.x(y,16)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-c0=this.E(a2,a3,a4,a1.gO()?null:C.a)}else c0=null
+c0=this.D(a2,a3,a4,a1.gO()?null:C.a)}else c0=null
 g=c0
 if(J.B(x,17)){a1=J.x(y,17)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-c1=this.E(a2,a3,a4,a1.gO()?null:C.a)}else c1=null
+c1=this.D(a2,a3,a4,a1.gO()?null:C.a)}else c1=null
 f=c1
 if(J.B(x,18)){a1=J.x(y,18)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-c2=this.E(a2,a3,a4,a1.gO()?null:C.a)}else c2=null
+c2=this.D(a2,a3,a4,a1.gO()?null:C.a)}else c2=null
 e=c2
 if(J.B(x,19)){a1=J.x(y,19)
 a2=J.C(a1)
 a3=a1.gN()
 a4=a1.gP()
-c3=this.E(a2,a3,a4,a1.gO()?null:C.a)}else c3=null
+c3=this.D(a2,a3,a4,a1.gO()?null:C.a)}else c3=null
 d=c3}catch(c4){a1=H.P(c4)
 c=a1
 H.S(c4)
@@ -4427,7 +4427,7 @@ a2=a0
 a3=new M.hP(null,null,null,"DI Exception",a1,a2)
 a3.iZ(this,a1,a2,J.C(c5))
 throw H.c(a3)}return b},
-E:function(a,b,c,d){var z,y
+D:function(a,b,c,d){var z,y
 z=$.$get$hN()
 if(a==null?z==null:a===z)return this
 if(c instanceof Z.eL){y=this.b.du(J.ab(a))
@@ -5331,7 +5331,7 @@ $.u.toString
 z=W.pd("template bindings={}")
 if(a!=null){$.u.toString
 J.dY(a,z)}return z},
-D:function(a,b,c){var z
+E:function(a,b,c){var z
 $.u.toString
 z=document.createTextNode(b)
 if(a!=null){$.u.toString
@@ -5650,27 +5650,27 @@ O.xP()},
 jP:{"^":"a9;k4,r1,r2,rx,ry,x1,x2,y1,y2,cb,aR,bw,b6,cc,cd,a1,aS,bx,b7,by,aa,bz,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3",
 b3:function(a){var z,y,x,w
 z=this.k1.hD(this.r.d)
-this.k4=this.k1.D(z,"      ",null)
+this.k4=this.k1.E(z,"      ",null)
 y=J.au(this.k1,z,"h1",null)
 this.r1=y
-this.r2=this.k1.D(y,"",null)
-this.rx=this.k1.D(z,"\n      ",null)
+this.r2=this.k1.E(y,"",null)
+this.rx=this.k1.E(z,"\n      ",null)
 y=J.au(this.k1,z,"h2",null)
 this.ry=y
-this.x1=this.k1.D(y,"My Heroes",null)
-this.x2=this.k1.D(z,"\n      ",null)
+this.x1=this.k1.E(y,"My Heroes",null)
+this.x2=this.k1.E(z,"\n      ",null)
 y=J.au(this.k1,z,"ul",null)
 this.y1=y
 this.k1.dv(y,"class","heroes")
-this.y2=this.k1.D(this.y1,"\n        ",null)
+this.y2=this.k1.E(this.y1,"\n        ",null)
 y=this.k1.hB(this.y1,null)
 this.cb=y
 y=new O.ax(9,7,this,y,null,null,null,null)
 this.aR=y
 this.bw=new S.j8(y,V.wl())
 this.b6=new S.ey(new R.js(y,$.$get$aV().$1("ViewContainerRef#createComponent()"),$.$get$aV().$1("ViewContainerRef#insert()"),$.$get$aV().$1("ViewContainerRef#remove()"),$.$get$aV().$1("ViewContainerRef#detach()")),this.bw,this.f.B(C.a2),this.z,null,null,null)
-this.cc=this.k1.D(this.y1,"\n      ",null)
-this.cd=this.k1.D(z,"\n      ",null)
+this.cc=this.k1.E(this.y1,"\n      ",null)
+this.cd=this.k1.E(z,"\n      ",null)
 y=J.au(this.k1,z,"my-hero-detail",null)
 this.a1=y
 this.aS=new O.ax(12,null,this,y,null,null,null,null)
@@ -5682,7 +5682,7 @@ w.r=y
 w.x=[]
 w.f=x
 x.aP([],null)
-w=this.k1.D(z,"\n    ",null)
+w=this.k1.E(z,"\n    ",null)
 this.b7=w
 y=$.bu
 this.by=y
@@ -5711,12 +5711,12 @@ jQ:{"^":"a9;k4,r1,r2,rx,ry,x1,x2,y1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,f
 b3:function(a){var z,y
 z=J.au(this.k1,null,"li",null)
 this.k4=z
-this.r1=this.k1.D(z,"\n          ",null)
+this.r1=this.k1.E(z,"\n          ",null)
 z=J.au(this.k1,this.k4,"span",null)
 this.r2=z
 this.k1.dv(z,"class","badge")
-this.rx=this.k1.D(this.r2,"",null)
-this.ry=this.k1.D(this.k4,"",null)
+this.rx=this.k1.E(this.r2,"",null)
+this.ry=this.k1.E(this.k4,"",null)
 this.x1=$.bu
 y=this.k1.da(this.k4,"click",this.c9(new V.vI(this)))
 z=$.bu
@@ -9197,7 +9197,7 @@ nO:function(a,b,c){var z,y,x
 z=$.fN
 if(z==null){z=a.d0("asset:angular2_tour_of_heroes/lib/hero_detail_component.dart class HeroDetailComponent - inline template",0,C.eM,C.d)
 $.fN=z}y=P.aH()
-x=new O.jS(null,null,null,null,null,null,null,C.bz,z,C.l,y,a,b,c,C.j,null,null,null,null,null,null,[],[],null,null,C.n,null,null,!1,null,null,null)
+x=new O.jS(null,null,null,null,null,null,C.bz,z,C.l,y,a,b,c,C.j,null,null,null,null,null,null,[],[],null,null,C.n,null,null,!1,null,null,null)
 x.bg(C.bz,z,C.l,y,a,b,c,C.j,null,U.aZ)
 return x},
 CB:[function(a,b,c){var z,y,x
@@ -9217,20 +9217,18 @@ xP:function(){if($.kl)return
 $.kl=!0
 $.$get$t().a.i(0,C.I,new R.o(C.cH,C.d,new O.yj(),null,null))
 F.z()},
-jS:{"^":"a9;k4,r1,r2,rx,ry,x1,x2,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3",
+jS:{"^":"a9;k4,r1,r2,rx,ry,x1,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3",
 b3:function(a){var z,y
 z=this.k1.hD(this.r.d)
-this.k4=this.k1.D(z,"    ",null)
+this.k4=this.k1.E(z,"      ",null)
 y=this.k1.hB(z,null)
 this.r1=y
 y=new O.ax(1,null,this,y,null,null,null,null)
 this.r2=y
 this.rx=new S.j8(y,O.xs())
 this.ry=new O.ez(new R.js(y,$.$get$aV().$1("ViewContainerRef#createComponent()"),$.$get$aV().$1("ViewContainerRef#insert()"),$.$get$aV().$1("ViewContainerRef#remove()"),$.$get$aV().$1("ViewContainerRef#detach()")),this.rx,null)
-y=this.k1.D(z,"\n  ",null)
-this.x1=y
-this.x2=$.bu
-this.bB([],[this.k4,this.r1,y],[],[])
+this.x1=$.bu
+this.bB([],[this.k4,this.r1],[],[])
 return},
 bD:function(a,b,c){if(a===C.ad&&1===b)return this.rx
 if(a===C.a5&&1===b)return this.ry
@@ -9238,7 +9236,7 @@ return c},
 c5:function(a){var z,y,x,w
 z=this.fy.gci()==null
 y=!z
-if(E.ai(a,this.x2,y)){x=this.ry
+if(E.ai(a,this.x1,y)){x=this.ry
 x.toString
 if(y){w=x.c
 w=w==null||w!==!0}else w=!1
@@ -9246,32 +9244,32 @@ if(w){x.c=!0
 x.a.kV(x.b)}else{if(z){z=x.c
 z=z==null||z===!0}else z=!1
 if(z){x.c=!1
-J.nT(x.a)}}this.x2=y}this.c6(a)
+J.nT(x.a)}}this.x1=y}this.c6(a)
 this.c7(a)},
 $asa9:function(){return[U.aZ]}},
 jT:{"^":"a9;k4,r1,r2,rx,ry,x1,x2,y1,y2,cb,aR,bw,b6,cc,cd,a1,aS,bx,b7,by,aa,bz,hF,eA,eB,d5,eC,eD,eE,eF,eG,eH,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr,fx,fy,go,id,k1,k2,k3",
 b3:function(a){var z,y,x,w,v,u
 z=J.au(this.k1,null,"div",null)
 this.k4=z
-this.r1=this.k1.D(z,"\n      ",null)
+this.r1=this.k1.E(z,"\n        ",null)
 z=J.au(this.k1,this.k4,"h2",null)
 this.r2=z
-this.rx=this.k1.D(z,"",null)
-this.ry=this.k1.D(this.k4,"\n      ",null)
+this.rx=this.k1.E(z,"",null)
+this.ry=this.k1.E(this.k4,"\n        ",null)
 z=J.au(this.k1,this.k4,"div",null)
 this.x1=z
 z=J.au(this.k1,z,"label",null)
 this.x2=z
-this.y1=this.k1.D(z,"id: ",null)
-this.y2=this.k1.D(this.x1,"",null)
-this.cb=this.k1.D(this.k4,"\n      ",null)
+this.y1=this.k1.E(z,"id: ",null)
+this.y2=this.k1.E(this.x1,"",null)
+this.cb=this.k1.E(this.k4,"\n        ",null)
 z=J.au(this.k1,this.k4,"div",null)
 this.aR=z
-this.bw=this.k1.D(z,"\n        ",null)
+this.bw=this.k1.E(z,"\n          ",null)
 z=J.au(this.k1,this.aR,"label",null)
 this.b6=z
-this.cc=this.k1.D(z,"name: ",null)
-this.cd=this.k1.D(this.aR,"\n        ",null)
+this.cc=this.k1.E(z,"name: ",null)
+this.cd=this.k1.E(this.aR,"\n          ",null)
 z=J.au(this.k1,this.aR,"input",null)
 this.a1=z
 this.k1.dv(z,"placeholder","name")
@@ -9289,8 +9287,8 @@ this.by=z
 y=new D.ex(null)
 y.a=z
 this.aa=y
-this.bz=this.k1.D(this.aR,"\n      ",null)
-this.hF=this.k1.D(this.k4,"\n    ",null)
+this.bz=this.k1.E(this.aR,"\n        ",null)
+this.hF=this.k1.E(this.k4,"\n      ",null)
 y=$.bu
 this.eA=y
 this.eB=y
