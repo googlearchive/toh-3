@@ -7,11 +7,11 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "src/hero.dart",
         "5": false
       },
       {
-        "1": "hero_detail_component.dart",
+        "1": "src/hero_detail_component.dart",
         "5": false
       }
     ],
@@ -35,11 +35,11 @@
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "src/hero.template.dart",
         "4": "i1"
       },
       {
-        "1": "hero_detail_component.template.dart",
+        "1": "src/hero_detail_component.template.dart",
         "4": "i2"
       }
     ]
