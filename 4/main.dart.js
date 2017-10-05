@@ -8027,35 +8027,34 @@ pn:{"^":"N;r,x,y,z,Q,ch,cx,cy,db,dx,a,b,c,d,e,f",
 a0:function(){var z,y,x,w,v,u,t,s
 z=this.eq(this.e)
 y=document
-z.appendChild(y.createTextNode("    "))
 x=S.aT(y,"h1",z)
 this.r=x
 this.bJ(x)
 x=y.createTextNode("")
 this.x=x
 this.r.appendChild(x)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n"))
 x=S.aT(y,"h2",z)
 this.y=x
 this.bJ(x)
 w=y.createTextNode("My Heroes")
 this.y.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n"))
 x=S.aT(y,"ul",z)
 this.z=x
 J.fn(x,"heroes")
 this.e6(this.z)
-v=y.createTextNode("\n      ")
+v=y.createTextNode("\n  ")
 this.z.appendChild(v)
 u=$.$get$f7().cloneNode(!1)
 this.z.appendChild(u)
-x=new V.i9(9,7,this,u,null,null,null)
+x=new V.i9(8,6,this,u,null,null,null)
 this.Q=x
 this.ch=new R.e_(x,null,null,null,new D.br(x,V.rb()))
-t=y.createTextNode("\n    ")
+t=y.createTextNode("\n")
 this.z.appendChild(t)
-z.appendChild(y.createTextNode("\n    "))
-x=M.ib(this,12)
+z.appendChild(y.createTextNode("\n"))
+x=M.ib(this,11)
 this.cy=x
 x=x.e
 this.cx=x
@@ -8067,10 +8066,10 @@ s=this.cy
 s.f=x
 s.a.e=[]
 s.a0()
-z.appendChild(y.createTextNode("\n  "))
+z.appendChild(y.createTextNode("\n"))
 this.aQ(C.c,C.c)
 return},
-bi:function(a,b,c){if(a===C.j&&12===b)return this.db
+bi:function(a,b,c){if(a===C.j&&11===b)return this.db
 return c},
 ap:function(){var z,y,x,w,v,u,t
 z=this.f
@@ -8100,7 +8099,7 @@ z=document
 y=z.createElement("li")
 this.r=y
 this.bJ(y)
-x=z.createTextNode("\n        ")
+x=z.createTextNode("\n    ")
 this.r.appendChild(x)
 y=S.aT(z,"span",this.r)
 this.x=y
@@ -8128,7 +8127,7 @@ this.Q=x}u=Q.f3(J.fh(y.j(0,"$implicit")))
 w=this.ch
 if(w!==u){this.y.textContent=u
 this.ch=u}y=J.dv(y.j(0,"$implicit"))
-t=" "+(y==null?"":H.i(y))+"\n      "
+t=" "+(y==null?"":H.i(y))+"\n  "
 y=this.cx
 if(y!==t){this.z.textContent=t
 this.cx=t}},
