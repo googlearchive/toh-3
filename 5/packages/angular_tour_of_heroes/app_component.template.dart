@@ -7,12 +7,12 @@ import 'app_component.dart';
 export 'app_component.dart';
 import 'package:angular/angular.dart';
 import 'src/hero.dart';
-import 'src/hero_detail_component.dart';
+import 'src/hero_component.dart';
 import 'src/mock_heroes.dart';
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/hero.template.dart' as _ref1;
-import 'src/hero_detail_component.template.dart' as _ref2;
+import 'src/hero_component.template.dart' as _ref2;
 import 'src/mock_heroes.template.dart' as _ref3;
 import 'package:angular_tour_of_heroes/app_component.css.shim.dart' as import0;
 import 'package:angular/src/core/linker/app_view.dart';
@@ -20,8 +20,8 @@ import 'app_component.dart' as import2;
 import 'dart:html' as import3;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_for.dart' as import5;
-import 'src/hero_detail_component.template.dart' as import6;
-import 'src/hero_detail_component.dart' as import7;
+import 'src/hero_component.template.dart' as import6;
+import 'src/hero_component.dart' as import7;
 import 'package:angular/src/core/render/api.dart';
 import 'package:angular/src/core/linker/view_type.dart' as import9;
 import 'package:angular/src/core/change_detection/change_detection.dart';
@@ -40,23 +40,24 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   ViewContainer _appEl_5;
   import5.NgFor _NgFor_5_9;
   import3.Element _el_6;
-  import6.ViewHeroDetailComponent0 _compView_6;
-  import7.HeroDetailComponent _HeroDetailComponent_6_5;
+  import6.ViewHeroComponent0 _compView_6;
+  import7.HeroComponent _HeroComponent_6_5;
+  var _expr_0;
   var _expr_1;
-  var _expr_2;
   static RenderComponentType _renderType;
-  ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAppComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('my-app');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AppComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.AppComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'h1', parentRenderNode);
     addShimE(_el_0);
-    _text_1 = new import3.Text('');
+    _text_1 = new import3.Text((ctx.title ?? ''));
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'h2', parentRenderNode);
     addShimE(_el_2);
@@ -70,12 +71,12 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _appEl_5 = new ViewContainer(5, 4, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_AppComponent1);
     _NgFor_5_9 = new import5.NgFor(_appEl_5, _TemplateRef_5_8);
-    _compView_6 = new import6.ViewHeroDetailComponent0(this, 6);
+    _compView_6 = new import6.ViewHeroComponent0(this, 6);
     _el_6 = _compView_6.rootEl;
     parentRenderNode.append(_el_6);
     addShimC(_el_6);
-    _HeroDetailComponent_6_5 = new import7.HeroDetailComponent();
-    _compView_6.create(_HeroDetailComponent_6_5, []);
+    _HeroComponent_6_5 = new import7.HeroComponent();
+    _compView_6.create(_HeroComponent_6_5, []);
     init(const [], null);
     return null;
   }
@@ -83,22 +84,18 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   @override
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
-    bool firstCheck = (this.cdState == 0);
-    final currVal_1 = _ctx.heroes;
-    if (!identical(_expr_1, currVal_1)) {
-      _NgFor_5_9.ngForOf = currVal_1;
-      _expr_1 = currVal_1;
+    final currVal_0 = _ctx.heroes;
+    if (!identical(_expr_0, currVal_0)) {
+      _NgFor_5_9.ngForOf = currVal_0;
+      _expr_0 = currVal_0;
     }
     _NgFor_5_9.ngDoCheck();
-    final currVal_2 = _ctx.selectedHero;
-    if (!identical(_expr_2, currVal_2)) {
-      _HeroDetailComponent_6_5.hero = currVal_2;
-      _expr_2 = currVal_2;
+    final currVal_1 = _ctx.selectedHero;
+    if (!identical(_expr_1, currVal_1)) {
+      _HeroComponent_6_5.hero = currVal_1;
+      _expr_1 = currVal_1;
     }
     _appEl_5.detectChangesInNestedViews();
-    if (firstCheck) {
-      (_text_1.text = (_ctx.title ?? ''));
-    }
     _compView_6.detectChanges();
   }
 
@@ -109,7 +106,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewAppComponent0(parentView, parentIndex);
 }
 
@@ -121,7 +118,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   bool _expr_0;
   var _expr_1;
   var _expr_2;
-  _ViewAppComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAppComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAppComponent0._renderType;
   }
   @override
@@ -170,7 +167,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   }
 }
 
-AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.AppComponent> viewFactory_AppComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponent1(parentView, parentIndex);
 }
 
@@ -179,7 +176,7 @@ const List<dynamic> styles$AppComponentHost = const [];
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
   import2.AppComponent _AppComponent_0_5;
-  _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAppComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
@@ -201,7 +198,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_AppComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewAppComponentHost0(parentView, parentIndex);
 }
 
