@@ -90,7 +90,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
       _expr_0 = currVal_0;
     }
     _NgFor_5_9.ngDoCheck();
-    final currVal_1 = _ctx.selectedHero;
+    final currVal_1 = _ctx.selected;
     if (!identical(_expr_1, currVal_1)) {
       _HeroComponent_6_5.hero = currVal_1;
       _expr_1 = currVal_1;
@@ -144,7 +144,7 @@ class _ViewAppComponent1 extends AppView<import2.AppComponent> {
   void detectChangesInternal() {
     final import2.AppComponent _ctx = ctx;
     final import14.Hero local_hero = locals['\$implicit'];
-    final currVal_0 = identical(local_hero, _ctx.selectedHero);
+    final currVal_0 = identical(local_hero, _ctx.selected);
     if (!identical(_expr_0, currVal_0)) {
       updateClass(_el_0, 'selected', currVal_0);
       _expr_0 = currVal_0;
