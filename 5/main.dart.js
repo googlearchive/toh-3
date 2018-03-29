@@ -10628,7 +10628,7 @@ this.r.appendChild(r)
 r=S.cf(s,"h2",t)
 this.y=r
 this.bt(r)
-q=s.createTextNode("My Heroes")
+q=s.createTextNode("Heroes")
 this.y.appendChild(q)
 r=S.cf(s,"ul",t)
 this.z=r
@@ -10755,7 +10755,7 @@ b4:function(){var t=this.r
 if(!(t==null))t.e5()},
 $asT:function(){return[A.aC]}}
 M.fn.prototype={
-ak:function(){var t,s,r,q,p
+ak:function(){var t,s,r,q
 t=document
 s=t.createElement("div")
 this.r=s
@@ -10764,8 +10764,6 @@ this.x=s
 r=t.createTextNode("")
 this.y=r
 s.appendChild(r)
-q=t.createTextNode(" details!")
-this.x.appendChild(q)
 r=S.ui(t,this.r)
 this.z=r
 r=S.cf(t,"label",r)
@@ -10794,12 +10792,12 @@ s=this.db;(s&&C.C).cz(s,"input",this.cE(this.gfV()))
 s=this.db;(s&&C.C).cz(s,"blur",this.ik(this.dx.gjd()))
 s=this.fr.f
 s.toString
-p=new P.by(s,[H.x(s,0)]).be(this.cE(this.gfX()))
-this.cK([this.r],[p])
+q=new P.by(s,[H.x(s,0)]).be(this.cE(this.gfX()))
+this.cK([this.r],[q])
 return},
-ef:function(a,b,c){if(a===C.b_&&11===b)return this.dx
-if(a===C.aK&&11===b)return this.dy
-if((a===C.b5||a===C.b3)&&11===b)return this.fr
+ef:function(a,b,c){if(a===C.b_&&10===b)return this.dx
+if(a===C.aK&&10===b)return this.dy
+if((a===C.b5||a===C.b3)&&10===b)return this.fr
 return c},
 an:function(){var t,s,r,q
 t=this.f

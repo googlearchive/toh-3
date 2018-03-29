@@ -61,7 +61,7 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'h2', parentRenderNode);
     addShimE(_el_2);
-    import3.Text _text_3 = new import3.Text('My Heroes');
+    import3.Text _text_3 = new import3.Text('Heroes');
     _el_2.append(_text_3);
     _el_4 = createAndAppend(doc, 'ul', parentRenderNode);
     _el_4.className = 'heroes';

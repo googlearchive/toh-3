@@ -75,15 +75,15 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
   import7.DivElement _el_0;
   import7.Element _el_1;
   import7.Text _text_2;
-  import7.DivElement _el_4;
-  import7.Element _el_5;
-  import7.Text _text_7;
-  import7.DivElement _el_8;
-  import7.Element _el_9;
-  import7.InputElement _el_11;
-  import11.DefaultValueAccessor _DefaultValueAccessor_11_5;
-  List<import12.ControlValueAccessor<dynamic>> _NgValueAccessor_11_6;
-  import13.NgModel _NgModel_11_7;
+  import7.DivElement _el_3;
+  import7.Element _el_4;
+  import7.Text _text_6;
+  import7.DivElement _el_7;
+  import7.Element _el_8;
+  import7.InputElement _el_10;
+  import11.DefaultValueAccessor _DefaultValueAccessor_10_5;
+  List<import12.ControlValueAccessor<dynamic>> _NgValueAccessor_10_6;
+  import13.NgModel _NgModel_10_7;
   var _expr_0;
   var _expr_1;
   _ViewHeroComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -96,40 +96,38 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
     _el_1 = createAndAppend(doc, 'h2', _el_0);
     _text_2 = new import7.Text('');
     _el_1.append(_text_2);
-    import7.Text _text_3 = new import7.Text(' details!');
-    _el_1.append(_text_3);
-    _el_4 = createDivAndAppend(doc, _el_0);
-    _el_5 = createAndAppend(doc, 'label', _el_4);
-    import7.Text _text_6 = new import7.Text('id:');
-    _el_5.append(_text_6);
-    _text_7 = new import7.Text('');
-    _el_4.append(_text_7);
-    _el_8 = createDivAndAppend(doc, _el_0);
-    _el_9 = createAndAppend(doc, 'label', _el_8);
-    import7.Text _text_10 = new import7.Text('name:');
-    _el_9.append(_text_10);
-    _el_11 = createAndAppend(doc, 'input', _el_8);
-    createAttr(_el_11, 'placeholder', 'name');
-    _DefaultValueAccessor_11_5 = new import11.DefaultValueAccessor(_el_11);
-    _NgValueAccessor_11_6 = [_DefaultValueAccessor_11_5];
-    _NgModel_11_7 = new import13.NgModel(null, _NgValueAccessor_11_6);
-    _el_11.addEventListener('input', eventHandler1(_handle_input_11_1));
-    _el_11.addEventListener('blur', eventHandler0(_DefaultValueAccessor_11_5.touchHandler));
-    final subscription_0 = _NgModel_11_7.update.listen(eventHandler1(_handle_ngModelChange_11_0));
+    _el_3 = createDivAndAppend(doc, _el_0);
+    _el_4 = createAndAppend(doc, 'label', _el_3);
+    import7.Text _text_5 = new import7.Text('id:');
+    _el_4.append(_text_5);
+    _text_6 = new import7.Text('');
+    _el_3.append(_text_6);
+    _el_7 = createDivAndAppend(doc, _el_0);
+    _el_8 = createAndAppend(doc, 'label', _el_7);
+    import7.Text _text_9 = new import7.Text('name:');
+    _el_8.append(_text_9);
+    _el_10 = createAndAppend(doc, 'input', _el_7);
+    createAttr(_el_10, 'placeholder', 'name');
+    _DefaultValueAccessor_10_5 = new import11.DefaultValueAccessor(_el_10);
+    _NgValueAccessor_10_6 = [_DefaultValueAccessor_10_5];
+    _NgModel_10_7 = new import13.NgModel(null, _NgValueAccessor_10_6);
+    _el_10.addEventListener('input', eventHandler1(_handle_input_10_1));
+    _el_10.addEventListener('blur', eventHandler0(_DefaultValueAccessor_10_5.touchHandler));
+    final subscription_0 = _NgModel_10_7.update.listen(eventHandler1(_handle_ngModelChange_10_0));
     init([_el_0], [subscription_0]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import11.DefaultValueAccessor) && (11 == nodeIndex))) {
-      return _DefaultValueAccessor_11_5;
+    if ((identical(token, import11.DefaultValueAccessor) && (10 == nodeIndex))) {
+      return _DefaultValueAccessor_10_5;
     }
-    if ((identical(token, const import14.MultiToken<import15.ControlValueAccessor>('NgValueAccessor')) && (11 == nodeIndex))) {
-      return _NgValueAccessor_11_6;
+    if ((identical(token, const import14.MultiToken<import15.ControlValueAccessor>('NgValueAccessor')) && (10 == nodeIndex))) {
+      return _NgValueAccessor_10_6;
     }
-    if (((identical(token, import13.NgModel) || identical(token, import16.NgControl)) && (11 == nodeIndex))) {
-      return _NgModel_11_7;
+    if (((identical(token, import13.NgModel) || identical(token, import16.NgControl)) && (10 == nodeIndex))) {
+      return _NgModel_10_7;
     }
     return notFoundResult;
   }
@@ -140,10 +138,10 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_11_7.model = _ctx.hero.name;
-    _NgModel_11_7.ngAfterChanges();
+    _NgModel_10_7.model = _ctx.hero.name;
+    _NgModel_10_7.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_11_7.ngOnInit();
+      _NgModel_10_7.ngOnInit();
     }
     final currVal_0 = import8.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
@@ -152,17 +150,17 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
     }
     final currVal_1 = import8.interpolate0(_ctx.hero.id);
     if (!identical(_expr_1, currVal_1)) {
-      _text_7.text = currVal_1;
+      _text_6.text = currVal_1;
       _expr_1 = currVal_1;
     }
   }
 
-  void _handle_ngModelChange_11_0($event) {
+  void _handle_ngModelChange_10_0($event) {
     ctx.hero.name = $event;
   }
 
-  void _handle_input_11_1($event) {
-    _DefaultValueAccessor_11_5.onChange($event.target.value);
+  void _handle_input_10_1($event) {
+    _DefaultValueAccessor_10_5.onChange($event.target.value);
   }
 }
 
