@@ -36,7 +36,7 @@ class ViewHeroComponent0 extends AppView<import1.HeroComponent> {
   ViewContainer _appEl_0;
   NgIf _NgIf_0_9;
   static RenderComponentType _renderType;
-  ViewHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import7.document.createElement('my-hero');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$HeroComponent);
     setupComponentType(_renderType);
@@ -45,7 +45,7 @@ class ViewHeroComponent0 extends AppView<import1.HeroComponent> {
   ComponentRef<import1.HeroComponent> build() {
     final _rootEl = rootEl;
     final import7.HtmlElement parentRenderNode = initViewRoot(_rootEl);
-    var _anchor_0 = ngAnchor.clone(false);
+    final _anchor_0 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_0);
     _appEl_0 = new ViewContainer(0, null, this, _anchor_0);
     TemplateRef _TemplateRef_0_8 = new TemplateRef(_appEl_0, viewFactory_HeroComponent1);
@@ -86,7 +86,7 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
   import13.NgModel _NgModel_10_7;
   var _expr_0;
   var _expr_1;
-  _ViewHeroComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHeroComponent1(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHeroComponent0._renderType;
   }
   @override
@@ -111,8 +111,8 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
     _DefaultValueAccessor_10_5 = new import11.DefaultValueAccessor(_el_10);
     _NgValueAccessor_10_6 = [_DefaultValueAccessor_10_5];
     _NgModel_10_7 = new import13.NgModel(null, _NgValueAccessor_10_6);
-    _el_10.addEventListener('input', eventHandler1(_handle_input_10_1));
     _el_10.addEventListener('blur', eventHandler0(_DefaultValueAccessor_10_5.touchHandler));
+    _el_10.addEventListener('input', eventHandler1(_handle_input_10_2));
     final subscription_0 = _NgModel_10_7.update.listen(eventHandler1(_handle_ngModelChange_10_0));
     init([_el_0], [subscription_0]);
     return null;
@@ -159,8 +159,8 @@ class _ViewHeroComponent1 extends AppView<import1.HeroComponent> {
     ctx.hero.name = $event;
   }
 
-  void _handle_input_10_1($event) {
-    _DefaultValueAccessor_10_5.onChange($event.target.value);
+  void _handle_input_10_2($event) {
+    _DefaultValueAccessor_10_5.handleChange($event.target.value);
   }
 }
 
@@ -173,7 +173,7 @@ const List<dynamic> styles$HeroComponentHost = const [];
 class _ViewHeroComponentHost0 extends AppView<dynamic> {
   ViewHeroComponent0 _compView_0;
   import1.HeroComponent _HeroComponent_0_5;
-  _ViewHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroComponent0(this, 0);
